@@ -30,6 +30,7 @@ nice_view_spi: &spi1 {
 
 	/* CS = P0.06 */
 	cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+	spi-max-frequency = <100000>;
 };
 
 /* Kill underglow, which commonly claims P0.06 via SPI3 MOSI */
