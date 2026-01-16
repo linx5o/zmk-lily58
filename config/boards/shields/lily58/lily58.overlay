@@ -1,0 +1,29 @@
+/ {
+	chosen {
+		zmk,display = &nice_view;
+	};
+};
+
+&pinctrl {
+	spi1_default: spi1_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 17)>,
+				<NRF_PSEL(SPIM_MISO, 0, 15)>; /* dummy */
+		};
+	};
+};
+
+&spi1 {
+	status = "okay";
+	pinctrl-0 = <&spi1_default>;
+	pinctrl-names = "default";
+
+	cs-gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+
+	nice_view: nice_view@0 {
+		compatible = "zmk,nice-view";
+		reg = <0>;
+		spi-max-frequency = <8000000>;
+	};
+};
