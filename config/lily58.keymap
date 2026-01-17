@@ -58,8 +58,8 @@
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
 &vim_copy &trans &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE   &kp C_PP              &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &trans    &kp LT    &kp COLON &kp RT    &trans    &trans
-&kp F7     &kp F8           &kp F9            &kp F10           &kp F11      &kp F12                      &trans    &kp LPAR  &kp DQT &kp RPAR  &trans    &trans
+&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &trans    &kp LS(COMMA)  &kp LS(SEMI) &kp LS(DOT)    &trans    &trans
+&kp F7     &kp F8           &kp F9            &kp F10           &kp F11      &kp F12                      &trans    &kp LS(N9)  &kp LS(SQT) &kp LS(N0)  &trans    &trans
 &trans     &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &trans       &kp CAPS &trans    &trans    &trans &trans &trans &trans &trans
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
             >;
@@ -77,8 +77,8 @@
             bindings = <
 &trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
 &kp GRAVE &kp N1 &kp N2 &kp N3  &kp N4  &kp N5                       &trans      &kp B    &kp UP    &kp W   &trans    &trans
-&trans    &kp N6 &kp N7 &kp N8  &kp N9  &kp N0                       &kp UNDER      &kp LEFT  &kp DOWN  &kp RIGHT   &trans &trans
-&trans    &trans &trans &trans &trans &trans &trans   &trans    &kp PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
+&trans    &kp N6 &kp N7 &kp N8  &kp N9  &kp N0                       &kp LS(MINUS)      &kp LEFT  &kp DOWN  &kp RIGHT   &trans &trans
+&trans    &trans &trans &trans &trans &trans &trans   &trans    &kp LS(EQUAL) &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
 
