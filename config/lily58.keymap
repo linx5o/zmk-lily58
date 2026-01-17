@@ -14,8 +14,9 @@
         vim_copy: vim_copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&kp G &kp G &kp LS(V) &kp LS(G) &kp LC(C)>;
+            wait-ms = <30>;
+            tap-ms = <40>;
+            bindings = <&kp G &kp G &kp LS(V) &kp LS(G) &kp LC(C)>;
         };
     };
 
