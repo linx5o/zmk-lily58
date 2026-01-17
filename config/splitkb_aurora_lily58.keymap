@@ -14,6 +14,8 @@
         vim_copy: vim_copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings 
                 = <&macro_tap &kp G &kp G>
                 , <&macro_press &kp LSHFT>
